@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
+    <script src="script.js"></script>
     
 </head>
 
 <body>
     <div class="wrapper">
-        <section class="firstSection">
+        <section class="firstSection" id="firstSection">
             <div class="nav">
                 <div class="firstleftColumn">
                     <div class="top_bar">
@@ -41,9 +42,9 @@
                 <div class="firstrightColumn">
                     <div top_bar>
                         <ul class="services">
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Works</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#firstSection">Services</a></li>
+                            <li><a href="#thirdSection">Works</a></li>
+                            <li><a href="#secondSection">Blog</a></li>
                                 
                         </ul>
         
@@ -56,7 +57,7 @@
                         <br>
                         <br>
                         <div class="story">
-                            <a href="#" id="myStory">My Story</a>
+                            <a href="https://github.com/JayAlwaysCodes" id="myStory">GitHub</a>
                             <img src="images/right-arrow.png" alt="" class="arrow">
 
                         </div>
@@ -77,10 +78,94 @@
 
 
         </section>
-        <section class="secondSection">
+        <section class="secondSection" id="secondSection">
             <div class="nav">
                 <div class="leftColumn">
                     <div class="leftContent">
+                        <div id="icontainer" style="display: none;">
+                            
+                            <div class="screen">
+                            
+                                <div class="screen-header">
+                            
+                                    <div class="screen-header-left">
+                            
+                                      <div class="screen-header-button close"></div>
+                            
+                                      <div class="screen-header-button maximize"></div>
+                            
+                                      <div class="screen-header-button minimize"></div>
+                            
+                                    </div>
+                            
+                                    <div class="screen-header-right">
+                            
+                                      <div class="screen-header-ellipsis"></div>
+                            
+                                      <div class="screen-header-ellipsis"></div>
+                            
+                                      <div class="screen-header-ellipsis"></div>
+                            
+                                    </div>
+                            
+                                </div>
+                            
+                                <div class="screen-body">
+                            
+                                    <div class="screen-body-item left">
+
+
+                            
+                                        <div class="app-title">
+                            
+                                            <span>CONTACT</span>
+                            
+                                            <span>US</span>
+                            
+                                        </div>
+                            
+                                        <div class="app-contact">CONTACT INFO : +234 90 383 471 94</div>
+                            
+                                    </div>
+                            
+                                    <div class="screen-body-item">
+                                        <form action="mailto:johnsonikechukwu525@gmail.com" method="post">
+                                            <div class="app-form" >
+                            
+                                                <div class="app-form-group">
+                                
+                                                    <input class="app-form-control" placeholder="NAME">
+                                
+                                                </div>
+                                
+                                                <div class="app-form-group">
+                                
+                                                    <input class="app-form-control" placeholder="EMAIL">
+                                
+                                                </div>
+                                
+                                                <div class="app-form-group">
+                                
+                                                    <input class="app-form-control" placeholder="CONTACT NO">
+                                
+                                                </div>
+                                                <div class="app-form-group message">
+                                                    
+                                                </div>
+                                                <div class="app-form-group buttons">
+                                                    <button class="app-form-button" onclick="showForm()" type="reset">CLOSE</button>
+                                                    <button class="app-form-button" type="submit">SEND</button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="contact-text">
                             <p id="contact"> - Contact</p>
                             <p id="bigText">Any Type Of Query & Discussion.</p>
@@ -88,13 +173,15 @@
 
                         </div>
                         
+                        
                         <br>
                         <br>
                         
                         
                         <div id="Econtact">
                            
-                            <a href="#contactform" id="contactForm">hi@Johnson.com</a>
+                            <a href="#icontainer " id="contactForm" onclick="showForm()">hi@Johnson.com</a>
+                            
                             <img src="images/right-arrow.png" alt="" class="arrow">
                         </div>
 
@@ -109,11 +196,11 @@
                         <p class="smalltext">Diligence is the mother of good fortune, and idleness, its opposite, never brought a man to the goal of any of his best wishes</p>
                         <div class="expe_cust">
                             <div class="expe_yrs">
-                                <p id="num">3</p>
+                                <p id="num">2</p>
                                 <p id="text">Years of Experience</p>
                             </div>
                             <div class="sat_cust">
-                                <p id="num">93</p>
+                                <p id="num">37</p>
                                 <p id="text">Satisfied Clients</p>
                             </div>
                         </div>
@@ -133,12 +220,12 @@
 
 
         </section>
-        <section class="thirdSection">
+        <section class="thirdSection" id="thirdSection">
             <div class="iService">
                 <div class="firstservice">
                     <img src="images/programming.png" alt="" class="fstack">
-                    <p>FullStack Developer</p>
-                    <p id="pronum">53 Projects</p>
+                    <p>Python Developer</p>
+                    <p id="pronum">15 Projects</p>
 
                 </div>
                 <div class="secondservice">
@@ -152,7 +239,7 @@
                 <div class="thirdservice">
                     <img src="images/solid.png" alt="" class="soldev">
                     <p>Solidity Dev.</p>
-                    <p id="pronum">15 Projects</p>
+                    <p id="pronum">13 Projects</p>
 
                 </div>
             </div>
@@ -165,6 +252,18 @@
 
         </section>
     </div>
+    <script>
+        function showForm(){
+
+            var form = document.getElementById('icontainer')
+            if(form.style.display==='none'){
+                form.style.display='block'
+            }else{
+                form.style.display='none'
+            }
+        }
+
+    </script>
     
 
 </body>

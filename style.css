@@ -13,6 +13,7 @@ body {
     font-family: 'Raleway', sans-serif;
     width: 100%;
     flex-wrap: wrap;
+    transition: 0.4s;
 }
 
 div {
@@ -62,7 +63,7 @@ p {
 .pp {
     justify-content: center;
     max-width: 35%;
-    height: 678px;
+    height: 640px;
     display: flex;
     position: absolute;
     transform: translate(300px, -80px);
@@ -125,6 +126,8 @@ p {
     position: absolute;
     margin-top: 700px;
     margin-left: 30px;
+    transition: 0.4s;
+    border: 1px ;
     
 }
 .whatsapp{
@@ -140,12 +143,25 @@ p {
     width: 20px;
     height: 20px;
 }
+.whatsapp:hover{
+    width: 25px;
+    height: 25px;
+}
+.twitter:hover{
+    width: 25px;
+    height: 25px;
 
-.firstrightColumn {
+}
+.linkedin:hover{
+    width: 25px;
+    height: 25px;
+}
+
+/* .firstrightColumn {
     /* padding-left: 400px; */
     /* position: inherit; */
-    padding-bottom: 100px;
-}
+    /* padding-bottom: 100px;}
+     */ 
 
 .firstrightColumn ul li {
     list-style: none;
@@ -160,12 +176,19 @@ p {
 }
 .firstrightColumn ul li a:hover{
     color: var(--maintext);
+    /* border:1px var(--maintext); */
+    font-size: 22px;
+    
 }
+/* .firstrightColumn :active{
+    text-decoration: dot;
+    color: red;
+} */
 
 .firstrightColumn ul {
     list-style-type: none;
     display: flex;
-    padding-left: 525px;
+    padding-left: 500px;
     /* position: absolute;  */
     padding-top: 30px;
     gap: 35px;
@@ -177,7 +200,7 @@ p {
 .introText {
     width: 380px;
     position: absolute;
-    padding-left: 430px;
+    padding-left: 400px;
     margin-left: 10px;
     padding-top: 60px;
 
@@ -285,6 +308,137 @@ p {
 #Econtact a{
     color: var(--secondarytext);
 }
+#icontainer {
+    flex: 0 1 800px;
+    margin: auto;
+    /* padding-bottom: 8000px;
+    margin-bottom: 00px; */
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 600px;
+    font-family: Raleway, sans-serif;
+    
+
+    position: absolute;
+}
+.screen {
+    position: relative;
+    background: var(--maincolor);
+    border-radius: 15px;
+}
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--secondarycolor);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.screen-header-left {
+    margin-right: auto;
+}
+.screen-header-button.close {
+    background: #ed1c6f;
+}
+.screen-header-button.maximize {
+    background: #e8e925;
+}
+.screen-header-button.minimize {
+    background: #74c54f;
+}
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+}
+.screen-header-right {
+    display: flex;
+}
+.screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+}
+.screen-body {
+    display: flex;
+}
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: var(--secondarytext);
+    font-size: 26px;
+}
+
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: var(--maintext);
+}
+.app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: var(--minortext);
+}
+.app-form-group {
+    margin-bottom: 15px;
+}
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: var(--maintext);
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+.app-form-button {
+    background: none;
+    border: none;
+    color: var(--secondarytext);
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgb(0 0 0 / 40%);
+    z-index: -1;
+}
+
 
 .rightColumn {
     display: grid;
@@ -365,7 +519,7 @@ p {
     align-content: center;
     justify-items: center;
     align-items: center;
-    /* padding-top: 50px; */
+    padding-top: 30px;
     padding-left: 450px;
 }
 .yellow{
