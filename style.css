@@ -447,7 +447,7 @@ p {
     padding-left: 200px;
     padding-right: 1px;
     width: 500px;
-    padding-top: 30px;
+    padding-top: 20px;
     
     
 
@@ -519,8 +519,10 @@ p {
     align-content: center;
     justify-items: center;
     align-items: center;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-left: 450px;
+
+    margin: 0;
 }
 .yellow{
     background-color: var(--secondarytext);
