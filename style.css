@@ -1701,10 +1701,10 @@ div {
     .nav {
         display: flex;
         padding-bottom: 600px;
-        margin-left: 70px;
+        margin-left: 50px;
         margin-right: 50px;
         margin-top: 10px;
-        gap: 280px;
+        gap: 200px;
         position: relative;
         
     }
@@ -1830,7 +1830,7 @@ div {
     }
     .secondSection .nav{
         display: flex;
-        gap: 460px;
+        gap: 260px;
         margin-top: 0px;
         padding-top: 5px;
         padding-bottom: 1px;
@@ -2200,12 +2200,12 @@ div {
     .top_bar{
         display: flex;
         max-width: 100%;
-        gap: 350px;
+        gap: 160px;
         margin: 0;
         flex-wrap: wrap;
         padding:0px 0px 0px;
         margin-left: 150px;
-        margin-right: 150px;
+        margin-right: 100px;
     }
     .top_bar ul li {
         list-style: none;
@@ -2225,7 +2225,7 @@ div {
     .top_bar ul {
         list-style-type: none;
         display: flex;
-        padding-left: 500px;
+        padding-left: 560px;
         padding-top: 30px;
         gap: 35px;
     } 
@@ -2233,16 +2233,16 @@ div {
     .nav {
         display: flex;
         padding-bottom: 600px;
-        margin-left: 150px;
+        margin-left: 100px;
         margin-right: 150px;
         margin-top: 10px;
-        gap: 350px;
+        gap: 320px;
         position: relative;
         
     }
     .pp {
         justify-content: baseline;
-        max-width: 100%;
+        max-width: 400px;
         height: 639px;
         position: absolute;
         transform: translate(250px, -80px);
@@ -2322,7 +2322,7 @@ div {
     .introText {
         width: 380px;
         position: absolute;
-        padding-left: 400px;
+        padding-left: 380px;
         margin-left: 10px;
         padding-top: 60px;
     
@@ -2365,10 +2365,10 @@ div {
     }
     .secondSection .nav{
         display: flex;
-        gap: 580px;
+        gap: 540px;
         margin-top: 0px;
         padding-top: 5px;
-        padding-bottom: 130px;
+        /* padding-bottom: 130px; */
     }
     .leftColumn {
         display: grid;
@@ -2539,7 +2539,7 @@ div {
     }
     .rightColumn {
         display: grid;
-        width: 500px;
+        width: 400px;
         padding-top: 20px;
     }
     .rightContent {
@@ -2608,7 +2608,7 @@ div {
         align-content: center;
         justify-items: center;
         align-items: center;
-        padding-top: 20px;
+        /* padding-top: 20px; */
         padding-left: 300px;
     
         margin: 0;
