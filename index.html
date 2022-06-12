@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Portfolio</title>
     <script src="script.js"></script>
     
@@ -14,15 +15,24 @@
 
 <body>
     <div class="wrapper">
+        
         <section class="firstSection" id="firstSection">
+            <div class="top_bar">
+                <div class="logo">
+                    <a href=""><img src="images/mock_logo.jpg" alt="logo"></a>
+
+                </div>
+                <ul id="services">
+                    <li><a href="#firstSection">Services</a></li>
+                    <li><a href="#thirdSection">Works</a></li>
+                    <li><a href="#secondSection">Blog</a></li>
+                        
+                </ul>
+                <a href="#services" class="icon" onclick="show_menu()"><i class="fa fa-bars"></i></a>
+            </div>
             <div class="nav">
                 <div class="firstleftColumn">
-                    <div class="top_bar">
-                        <div class="logo">
-                            <a href=""><img src="images/mock_logo.jpg" alt="logo"></a>
-        
-                        </div>
-                    </div>
+                    
                     <div class="profilePic">
                         <img src="images/mock_pp.jpg" alt="" class="pp">
                     </div>
@@ -40,15 +50,6 @@
                     
                 </div> 
                 <div class="firstrightColumn">
-                    <div top_bar>
-                        <ul class="services">
-                            <li><a href="#firstSection">Services</a></li>
-                            <li><a href="#thirdSection">Works</a></li>
-                            <li><a href="#secondSection">Blog</a></li>
-                                
-                        </ul>
-        
-                    </div>
                 
                     <div class="introText">
                         <p id="introduction"> - Introduction</p>
@@ -252,18 +253,7 @@
 
         </section>
     </div>
-    <script>
-        function showForm(){
-
-            var form = document.getElementById('icontainer')
-            if(form.style.display==='none'){
-                form.style.display='block'
-            }else{
-                form.style.display='none'
-            }
-        }
-
-    </script>
+   
     
 
 </body>
